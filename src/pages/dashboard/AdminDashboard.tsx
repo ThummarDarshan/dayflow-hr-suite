@@ -48,7 +48,7 @@ export default function AdminDashboard() {
     },
     {
       title: 'Payroll This Month',
-      value: '$124,500',
+      value: '₹12,45,000',
       change: '+8%',
       trend: 'up',
       icon: Wallet,
@@ -64,15 +64,15 @@ export default function AdminDashboard() {
   ];
 
   const pendingLeaves = [
-    { id: 1, name: 'John Smith', type: 'Paid Leave', dates: 'Jan 5-7', days: 3 },
-    { id: 2, name: 'Jane Doe', type: 'Sick Leave', dates: 'Jan 8', days: 1 },
-    { id: 3, name: 'Mike Johnson', type: 'Unpaid Leave', dates: 'Jan 10-12', days: 3 },
+    { id: 1, name: 'Rahul Kumar', type: 'Paid Leave', dates: 'Jan 5-7', days: 3 },
+    { id: 2, name: 'Ananya Patel', type: 'Sick Leave', dates: 'Jan 8', days: 1 },
+    { id: 3, name: 'Vikram Singh', type: 'Unpaid Leave', dates: 'Jan 10-12', days: 3 },
   ];
 
   const recentHires = [
-    { id: 1, name: 'Alice Williams', position: 'Software Engineer', date: 'Dec 28' },
-    { id: 2, name: 'Bob Martin', position: 'Marketing Manager', date: 'Dec 20' },
-    { id: 3, name: 'Carol Davis', position: 'HR Specialist', date: 'Dec 15' },
+    { id: 1, name: 'Sneha Reddy', position: 'Software Engineer', date: 'Dec 28' },
+    { id: 2, name: 'Arjun Mehta', position: 'Marketing Manager', date: 'Dec 20' },
+    { id: 3, name: 'Kavya Nair', position: 'HR Specialist', date: 'Dec 15' },
   ];
 
   return (

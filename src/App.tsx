@@ -14,6 +14,22 @@ import EmployeeDashboard from "./pages/dashboard/EmployeeDashboard";
 import AdminDashboard from "./pages/dashboard/AdminDashboard";
 import NotFound from "./pages/NotFound";
 
+// Employee Pages
+import EmployeeProfile from "./pages/employee/Profile";
+import EmployeeAttendance from "./pages/employee/Attendance";
+import EmployeeLeaveRequests from "./pages/employee/LeaveRequests";
+import EmployeePayroll from "./pages/employee/Payroll";
+
+// Admin Pages
+import Employees from "./pages/admin/Employees";
+import AddEmployee from "./pages/admin/AddEmployee";
+import Attendance from "./pages/admin/Attendance";
+import LeaveManagement from "./pages/admin/LeaveManagement";
+import Payroll from "./pages/admin/Payroll";
+import Reports from "./pages/admin/Reports";
+import Notifications from "./pages/admin/Notifications";
+import Settings from "./pages/admin/Settings";
+
 // Components
 import { ProtectedRoute } from "@/components/auth/ProtectedRoute";
 
@@ -71,22 +87,22 @@ function AppRoutes() {
       } />
       <Route path="/profile" element={
         <ProtectedRoute>
-          <PlaceholderPage title="My Profile" />
+          <EmployeeProfile />
         </ProtectedRoute>
       } />
       <Route path="/attendance" element={
         <ProtectedRoute>
-          <PlaceholderPage title="My Attendance" />
+          <EmployeeAttendance />
         </ProtectedRoute>
       } />
       <Route path="/leave" element={
         <ProtectedRoute>
-          <PlaceholderPage title="Leave Requests" />
+          <EmployeeLeaveRequests />
         </ProtectedRoute>
       } />
       <Route path="/payroll" element={
         <ProtectedRoute>
-          <PlaceholderPage title="My Payroll" />
+          <EmployeePayroll />
         </ProtectedRoute>
       } />
       
@@ -98,42 +114,42 @@ function AppRoutes() {
       } />
       <Route path="/admin/employees" element={
         <ProtectedRoute allowedRoles={['admin']}>
-          <PlaceholderPage title="Employee Directory" />
+          <Employees />
         </ProtectedRoute>
       } />
       <Route path="/admin/employees/new" element={
         <ProtectedRoute allowedRoles={['admin']}>
-          <PlaceholderPage title="Add New Employee" />
+          <AddEmployee />
         </ProtectedRoute>
       } />
       <Route path="/admin/attendance" element={
         <ProtectedRoute allowedRoles={['admin']}>
-          <PlaceholderPage title="Attendance Management" />
+          <Attendance />
         </ProtectedRoute>
       } />
       <Route path="/admin/leave" element={
         <ProtectedRoute allowedRoles={['admin']}>
-          <PlaceholderPage title="Leave Approvals" />
+          <LeaveManagement />
         </ProtectedRoute>
       } />
       <Route path="/admin/payroll" element={
         <ProtectedRoute allowedRoles={['admin']}>
-          <PlaceholderPage title="Payroll Management" />
+          <Payroll />
         </ProtectedRoute>
       } />
       <Route path="/admin/reports" element={
         <ProtectedRoute allowedRoles={['admin']}>
-          <PlaceholderPage title="Reports Dashboard" />
+          <Reports />
         </ProtectedRoute>
       } />
       <Route path="/admin/notifications" element={
         <ProtectedRoute allowedRoles={['admin']}>
-          <PlaceholderPage title="Notifications" />
+          <Notifications />
         </ProtectedRoute>
       } />
       <Route path="/admin/settings" element={
         <ProtectedRoute allowedRoles={['admin']}>
-          <PlaceholderPage title="Settings" />
+          <Settings />
         </ProtectedRoute>
       } />
       
